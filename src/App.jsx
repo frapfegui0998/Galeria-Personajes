@@ -2,32 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './Header'
+import Tarjeta from './Tarjeta'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <Header/>
+      </header>
+      <main>
+        <Tarjeta image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRaxgqEVBX4jF4Ul3jzOJFElZY8eI6A57QA&s" name="superman" universe="DC" description="El más fuerte de todos los superhéroes" powers="Rayos X, volar, super fuerza" stats={[{ key: 'fuerza', value: 50 }, { key: 'velocidad', value: 100 }, { key: 'defensa', value: 400 }]}/>
+      </main>
     </>
   )
 }
