@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Tarjeta from './Tarjeta'
+import Footer from './Footer'
 import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
       name: "Spiderman",
       universe: "Marvel",
       description: "Obtuvo sus poderes de la picadura de una araña",
-      powers: "Tira telaraña, trepa paredes, se culumpia entre edificios", 
+      powers: "Tira telaraña, trepa paredes, se columpia entre edificios", 
       stats: [
         { key: 'fuerza', value: 20 }, 
         { key: 'velocidad', value: 90 }, 
@@ -58,6 +59,7 @@ function App() {
           ))}
         </Row>
       </Container>
+      <Footer/>
     </>
   );
 }
